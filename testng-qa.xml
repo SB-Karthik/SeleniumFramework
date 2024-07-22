@@ -5,12 +5,14 @@
         <listener class-name="com.thetestingacdemy.utils.ScreenShotListener"> </listener>
     </listeners>
     <test verbose="2" preserve-order="true" name="SeleniumFramework">
+       <groups>
+           <run>
+               <include name="QA"/>
+           </run>
+       </groups>
+
         <classes>
             <class name="thetestingacdemy.web.tests.LoginTest">
-                <methods>
-                    <include name="testVWOLogin_Negative"/>
-                    <include name="testVWOLogin_Positive"/>
-                </methods>
             </class>
         </classes>
     </test>
